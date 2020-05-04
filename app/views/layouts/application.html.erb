@@ -11,7 +11,15 @@
 
   <body class="d-flex flex-column">
     <%= render 'layouts/navigation' %>
-    <%= render 'layouts/messages' %>
-    <%= yield %>
+    <div id="page-content">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </div>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white">
+      <div class="container text-center">
+        <small>Copyright &copy; <%= link_to "Mashrur Hossain", "http://mashrurhossain.com", class: "text-white" %> </small>
+      </div>
+    </footer>
+
   </body>
 </html>
